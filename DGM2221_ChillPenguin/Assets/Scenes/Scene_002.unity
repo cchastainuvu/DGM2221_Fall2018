@@ -806,6 +806,34 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7226ec0347bd6d747a20cc0a27a80496, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &708262409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 708262410}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &708262410
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 708262409}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -237.73524, y: 6.205531, z: -82.33657}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &730663976 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: a95c8209ae81838488935aa48043aa47, type: 3}
@@ -1741,6 +1769,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1072217199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1072217190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"HealthBar","summary":null,"pan":{"x":382.8404,"y":133.0022},"zoom":1.0,"elements":[{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"Health","$type":"System.String"},"object":null},"position":{"x":-90.0,"y":137.0},"guid":"d831f1d6-80d9-4ef6-ad9e-52698efd2e1f","$version":"A","$type":"Bolt.GetVariable","$id":"10"},{"defaultValues":{"dividend":{"$content":1.0,"$type":"System.Single"},"divisor":{"$content":20.0,"$type":"System.Single"}},"position":{"x":97.0,"y":147.0},"guid":"066a6a42-7e51-4d85-ae5a-2b6edae0578d","$version":"A","$type":"Bolt.ScalarDivide","$id":"12"},{"type":"UnityEngine.GameObject","value":{"$content":0,"$type":"UnityEngine.GameObject"},"defaultValues":{},"position":{"x":93.0,"y":253.0},"guid":"6ceebf7f-4000-48a0-a19f-f0c3b4639d0b","$version":"A","$type":"Bolt.Literal","$id":"14"},{"chainable":false,"member":{"name":"fillAmount","parameterTypes":null,"targetType":"UnityEngine.UI.Image","targetTypeName":"UnityEngine.UI.Image","$version":"A"},"defaultValues":{"target":null,"input":{"$content":0.0,"$type":"System.Single"}},"position":{"x":370.0,"y":61.0},"guid":"ffbb6806-185c-4e0c-8db4-6f027c49a4b7","$version":"A","$type":"Bolt.SetMember","$id":"16"},{"coroutine":false,"defaultValues":{},"position":{"x":121.0,"y":62.0},"guid":"aacf55b7-ffa7-410b-941d-b8a9356d3b42","$version":"A","$type":"Bolt.Update","$id":"19"},{"sourceUnit":{"$ref":"19"},"sourceKey":"trigger","destinationUnit":{"$ref":"16"},"destinationKey":"assign","guid":"61682110-db5b-46cb-a5a0-d3462cdb2e84","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"10"},"sourceKey":"value","destinationUnit":{"$ref":"12"},"destinationKey":"dividend","guid":"2cd777f5-2dd4-455c-81c1-70073e70ff10","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"output","destinationUnit":{"$ref":"16"},"destinationKey":"target","guid":"d1cecab2-8369-424d-9397-c593ae3c34cf","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"quotient","destinationUnit":{"$ref":"16"},"destinationKey":"input","guid":"bd416f6a-115d-4bbf-bf89-8683c3958782","$type":"Bolt.ValueConnection"},{"position":{"xMin":-143.0,"yMin":-24.0,"xMax":567.0,"yMax":373.0},"label":"HealthBar","comment":null,"color":{"r":0.0,"g":0.0,"b":0.0,"a":1.0},"guid":"02c17453-1e89-487c-abc2-a53d89b346b7","$version":"A","$type":"Ludiq.GraphGroup"}],"$version":"A"}}}'
+    _objectReferences:
+    - {fileID: 221024348}
 --- !u!1 &1086227046
 GameObject:
   m_ObjectHideFlags: 0
