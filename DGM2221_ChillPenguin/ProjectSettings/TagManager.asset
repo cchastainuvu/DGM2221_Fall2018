@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Checkpoint
   - Wander
+  - Projectile
+  - Hazard
   layers:
   - Default
   - TransparentFX
