@@ -8,6 +8,8 @@ TagManager:
   - Wander
   - Projectile
   - Hazard
+  - Health
+  - Death
   layers:
   - Default
   - TransparentFX
